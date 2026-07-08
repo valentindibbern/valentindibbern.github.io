@@ -7,6 +7,8 @@ Technische Übersicht der im Projekt tatsächlich verwendeten Werkzeuge, Librari
 - Bun
   - Standard-Package-Manager und Runtime für `install`, `dev`, `run build`, `run preview` und `astro`-Befehle.
   - `package.json` pinnt die erwartete Bun-Version über `packageManager`; `bun.lock` ist der Lockfile.
+- Node.js
+  - Lokale Builds und Checks brauchen Node `>=22.13.0`, passend zur Astro- und ESLint-Toolchain.
 - Astro
   - Framework für Seiten, Layouts, Content Collections und statisches Rendering.
 - TypeScript
@@ -29,6 +31,8 @@ Technische Übersicht der im Projekt tatsächlich verwendeten Werkzeuge, Librari
   - Utility-first Styling-Grundlage für Layout, Abstände, Typografie und responsives Verhalten.
 - `@tailwindcss/vite`
   - Vite-Integration für Tailwind v4 im Astro-Build.
+- Vite
+  - Direkt als Dev-Dependency auf der Vite-7-Linie gepinnt, damit Astro 6 und Tailwind dieselbe Vite-Major-Version verwenden.
 - CSS Custom Properties
   - Design-Tokens für Terminalfarben, Maximalbreiten und Grundflächen in `src/styles/global.css`.
 - Web Crypto API

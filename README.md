@@ -24,6 +24,8 @@ bun install
 bun dev
 ```
 
+Voraussetzung: Node `>=22.13.0` und die in `package.json` über `packageManager` gepinnte Bun-Version.
+
 Lokale Vorschau:
 
 - Dev-Server: `http://localhost:4321`
