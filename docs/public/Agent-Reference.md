@@ -66,6 +66,8 @@ Diese Datei ist der öffentliche Einstieg für Agents und andere KI-Systeme, die
 
 ## Validation
 
+- Node `>=22.13.0` verwenden.
+- Nach Dependency-Range-Änderungen `bun.lock` inklusive Workspace-Manifest synchron halten.
 - `bun astro check`
 - `bun run build`
 
